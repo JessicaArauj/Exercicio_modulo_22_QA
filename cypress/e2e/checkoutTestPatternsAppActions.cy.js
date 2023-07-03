@@ -1,14 +1,24 @@
-/// <reference types = "cypress" />
+/// <reference types="cypress" />
+
+const dashboardPage = require('../support/pages/checkoutDashboard.page')
+const data = require('../fixtures/data.json')
 
 
-describe('Realizar novo cadastro', () => {
-
+describe('Checkout', () => {
     beforeEach(() => {
-        cy.checkout(data.email, data.password)
+      
+    });
+    it('login', () => {   
+              
+        cy.login(data.email, data.senha)   
+        
     });
 
-    it('Validar acesso a pagina checkout', () => {
-        cy.validateString('Você tem um cupom de desconto?');
+    it('chekout', () => {       
+        cy.checkout()
+        // checkoutDashboard.contaPage.should('be.visible')
+        cy.get('.page-title').should('be.visible')
+       
+        
     });
-
 });

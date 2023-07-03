@@ -20,7 +20,7 @@ describe('Realizar novo cadastro', () => {
             });
 
             it('Then the user dashboard page should be visible', () => {
-                cy.get('#main > div > div > p:nth-child(3)').should('be.visible');
+                cy.get('.woocommerce-MyAccount-navigation').should('be.visible');
               });
               
         });
