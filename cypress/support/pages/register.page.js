@@ -1,6 +1,6 @@
 /// <reference types = "cypress" />
 
-class CadastroPage {
+class RegisterPage {
     get #email() { return cy.get("#reg_email") }
     get #password() { return cy.get("#reg_password") }
     get #register() { return cy.get("#customer_login > div:nth-child(2) > form > p:nth-child(4) > input.button") }
@@ -12,4 +12,4 @@ class CadastroPage {
     }
 }
 
-module.exports = new CadastroPage
+module.exports = new RegisterPage
