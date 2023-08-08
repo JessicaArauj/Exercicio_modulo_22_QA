@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-08T16:21:01.877Z",
+    "end": "2023-08-08T16:21:11.039Z",
+    "duration": 9162,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "963f46bb-40f3-4e70-ad8c-4b774b0264b2",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cadastroTestPatternsPageObjects.cy.js",
+      "file": "cypress\\e2e\\cadastroTestPatternsPageObjects.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b96cd62-60b8-4df8-bb69-fa59bfb08cd4",
+          "title": "Realizar novo cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Novo cadastro",
+              "fullTitle": "Realizar novo cadastro Novo cadastro",
+              "timedOut": null,
+              "duration": 9110,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registerPage.cadastro(email, password);\ncy.wait(2000);\n// dashboardPage.minhaPage.should(\"be.visible\")\ncy.get('.woocommerce-MyAccount-navigation').should('be.visible');",
+              "err": {},
+              "uuid": "8820382c-1e73-42a7-9594-21c4b3da7954",
+              "parentUUID": "0b96cd62-60b8-4df8-bb69-fa59bfb08cd4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8820382c-1e73-42a7-9594-21c4b3da7954"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9110,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

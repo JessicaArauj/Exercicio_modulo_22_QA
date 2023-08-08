@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-08T16:21:25.757Z",
+    "end": "2023-08-08T16:21:30.856Z",
+    "duration": 5099,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a23b77fb-082f-4f00-9192-7641c25d9d66",
+      "title": "",
+      "fullFile": "cypress\\e2e\\testIntercept.cy.js",
+      "file": "cypress\\e2e\\testIntercept.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7632cb3d-c904-4d1e-aeca-a5ce8fea15c3",
+          "title": "Product Search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search should be return a product searched",
+              "fullTitle": "Product Search Search should be return a product searched",
+              "timedOut": null,
+              "duration": 5017,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_home.homePage.searchMagnifier();\n_productSearch.productSearchPage.search('jacket');\n_productSearch.productSearchPage.productList.first().should('have.attr', 'title', 'Ingrid Running Jacket');",
+              "err": {},
+              "uuid": "8e22d2fa-4ab8-4e59-945d-69c36fdcd7c1",
+              "parentUUID": "7632cb3d-c904-4d1e-aeca-a5ce8fea15c3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8e22d2fa-4ab8-4e59-945d-69c36fdcd7c1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5017,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

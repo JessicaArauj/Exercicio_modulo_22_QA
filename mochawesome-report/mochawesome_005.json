@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-08-08T16:21:22.596Z",
+    "end": "2023-08-08T16:21:22.948Z",
+    "duration": 352,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "89c9e660-7ad6-451e-99ca-045861c279ac",
+      "title": "",
+      "fullFile": "cypress\\e2e\\envTest.cy.js",
+      "file": "cypress\\e2e\\envTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "35ed21ea-2b9b-48e9-9e88-d8dde74a2cd6",
+          "title": "Enviroment Variables",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cypress.config.js",
+              "fullTitle": "Enviroment Variables Cypress.config.js",
+              "timedOut": null,
+              "duration": 273,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.url().should('eq', 'http://lojaebac.ebaconline.art.br/');",
+              "err": {
+                "message": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Enviroment Variables`",
+                "estack": "CypressError: `cy.visit()` must be called with a `url` or an `options` object containing a `url` as its 1st argument\n\nhttps://on.cypress.io/visit\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Enviroment Variables`\n    at Context.visit (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:147465:78)\n    at wrapped (http://lojaebac.ebaconline.art.br/__cypress/runner/cypress_runner.js:160836:43)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/envTest.cy.js:6:11)",
+                "diff": null
+              },
+              "uuid": "89312541-8a7e-4130-8203-100c9ef71b43",
+              "parentUUID": "35ed21ea-2b9b-48e9-9e88-d8dde74a2cd6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "89312541-8a7e-4130-8203-100c9ef71b43"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 273,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "mochawesome-report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

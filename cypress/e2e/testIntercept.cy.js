@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
-import {homePage,productSearchPage} from '../support/pages'
-const data = require('../fixtures/cart.json')
+import { homePage } from '../support/pages/home.page';
+import { productSearchPage } from '../support/pages/productSearch.page';
+const data = require ('../fixtures/cart.json')
 
 describe('Product Search', () => {
     before(() => {
