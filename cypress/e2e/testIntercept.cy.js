@@ -26,6 +26,7 @@ describe('Product Search', () => {
     });
 
     beforeEach(() => {
+        // cy.visit("http://lojaebac.ebaconline.art.br") passou
         cy.visit("/")
     })
 
